@@ -1,0 +1,2265 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Data_F_Curator_Characters",
+		"a3_characters_f",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Structures_F_EPA_Mil_Scrapyard",
+		"A3_Modules_F_Intel",
+		"A3_Characters_F_BLUFOR",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_INDEP",
+		"ace_respawn",
+		"ace_medical",
+		"3DEN",
+		"A3_Data_F_Curator_Virtual",
+		"ace_advanced_ballistics",
+		"ace_vehiclelock",
+		"ace_zeus",
+		"ace_sitting",
+		"aia_utes_config",
+		"A3_Structures_F_Bootcamp_VR_Blocks",
+		"A3_Structures_F_Bootcamp_Training"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"A3_Modules_F_Intel",
+		"A3_Characters_F_OPFOR",
+		"A3_Characters_F_INDEP",
+		"ace_respawn",
+		"ace_medical",
+		"A3_Data_F_Curator_Virtual",
+		"ace_advanced_ballistics",
+		"ace_vehiclelock",
+		"ace_zeus",
+		"ace_sitting",
+		"A3_Structures_F_EPA_Mil_Scrapyard",
+		"A3_Structures_F_Bootcamp_VR_Blocks",
+		"A3_Structures_F_Bootcamp_Training",
+		"aia_utes_config"
+	};
+	randomSeed=275780;
+	class Intel
+	{
+		briefingName="Zeus Mission ACE V5";
+		resistanceWest=0;
+		startWeather=0;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=35;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Groups
+	{
+		items=74;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.7656,18.498571,3771.0195};
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+					description="Generic Man";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4236.7637,18.651997,3773.6011};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="#adminLogged";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=1;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="Zeus";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4236.6914,19.00415,3772.3804};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="3";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Subject";
+						};
+						class Item2
+						{
+							value="Situation";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="PresetTitle";
+						};
+						class Item3
+						{
+							value="";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Title";
+						};
+						class Item4
+						{
+							value="Be prepaired for anything. Respect Zeus or fear his lightning. He may give you one life he may give you meany";
+							parentCls="ModuleCreateDiaryRecord_F";
+							typeName="Description";
+						};
+					};
+					id=2;
+					side="LOGIC";
+					vehicle="ModuleCreateDiaryRecord_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.7686,18.430487,3771.041};
+					id=3;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item4
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.6162,18.373589,3771.0571};
+					id=4;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item5
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.3594,18.324728,3771.0684};
+					id=5;
+					side="WEST";
+					vehicle="B_soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.2354,18.290882,3771.0767};
+					id=6;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.7656,18.794373,3770.1753};
+					id=7;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+					description="Generic Man";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.7793,18.721666,3770.208};
+					id=8;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.71,18.659773,3770.2241};
+					id=9;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.4111,18.621029,3770.2139};
+					id=10;
+					side="WEST";
+					vehicle="B_soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.2773,18.569763,3770.2109};
+					id=11;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.7554,19.009865,3769.3516};
+					id=12;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+					description="Generic Man";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.8311,18.927393,3769.4253};
+					id=13;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.7314,18.878963,3769.3999};
+					id=14;
+					side="WEST";
+					vehicle="B_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.4844,18.838305,3769.3794};
+					id=15;
+					side="WEST";
+					vehicle="B_soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.3398,18.757526,3769.5024};
+					id=16;
+					side="WEST";
+					vehicle="B_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.8384,19.204128,3768.5088};
+					id=17;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+					description="Generic Man";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.8906,19.14805,3768.4771};
+					id=18;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+					description="Generic Man";
+				};
+			};
+		};
+		class Item19
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.8184,19.089605,3768.4873};
+					id=19;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+					description="Generic Man";
+				};
+			};
+		};
+		class Item20
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.5371,19.038725,3768.5186};
+					id=20;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+					description="Generic Man";
+				};
+			};
+		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.3809,18.987896,3768.5181};
+					id=21;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+					description="Generic Man";
+				};
+			};
+		};
+		class Item22
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.6519,16.206322,3778.3936};
+					id=22;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item23
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.4512,16.210983,3778.4053};
+					id=23;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item24
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.2139,16.199129,3778.4751};
+					id=24;
+					side="EAST";
+					vehicle="O_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item25
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.1074,16.188068,3778.5464};
+					id=25;
+					side="EAST";
+					vehicle="O_soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item26
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.9063,16.199474,3778.5342};
+					id=26;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item27
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.6284,16.377241,3777.7822};
+					id=27;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item28
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.4272,16.381985,3777.7939};
+					id=28;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item29
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.1904,16.370049,3777.8638};
+					id=29;
+					side="EAST";
+					vehicle="O_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item30
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.084,16.358988,3777.9351};
+					id=30;
+					side="EAST";
+					vehicle="O_soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item31
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.8828,16.370392,3777.9229};
+					id=31;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item32
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.6167,16.522045,3777.2646};
+					id=32;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item33
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.4155,16.526789,3777.2764};
+					id=33;
+					side="EAST";
+					vehicle="O_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item34
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.1787,16.514851,3777.3462};
+					id=34;
+					side="EAST";
+					vehicle="O_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item35
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.0723,16.503792,3777.4175};
+					id=35;
+					side="EAST";
+					vehicle="O_soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item36
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.8706,16.515192,3777.4053};
+					id=36;
+					side="EAST";
+					vehicle="O_soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item37
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.5747,16.687994,3776.6704};
+					id=37;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item38
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.4609,16.694038,3776.6807};
+					id=38;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item39
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.1899,16.677914,3776.7642};
+					id=39;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item40
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.1377,16.675602,3776.8062};
+					id=40;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item41
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.9507,16.666386,3776.8682};
+					id=41;
+					side="EAST";
+					vehicle="O_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item42
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.6899,14.707628,3784.0356};
+					id=42;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item43
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.7822,14.646821,3784.1064};
+					id=43;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item44
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.9453,14.58867,3784.1064};
+					id=44;
+					side="GUER";
+					vehicle="I_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item45
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.9556,14.523011,3784.1538};
+					id=45;
+					side="GUER";
+					vehicle="I_Soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item46
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.8604,14.477867,3784.1533};
+					id=46;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item47
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.7017,14.903491,3783.2827};
+					id=47;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item48
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.7939,14.887145,3783.3535};
+					id=48;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item49
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4227.957,14.828994,3783.3535};
+					id=49;
+					side="GUER";
+					vehicle="I_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item50
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.9673,14.76335,3783.4009};
+					id=50;
+					side="GUER";
+					vehicle="I_Soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item51
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.8721,14.718205,3783.4004};
+					id=51;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item52
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.7603,15.053882,3782.7065};
+					id=52;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item53
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.8525,15.046399,3782.7773};
+					id=53;
+					side="GUER";
+					vehicle="I_medic_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item54
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.0156,15.01044,3782.7773};
+					id=54;
+					side="GUER";
+					vehicle="I_engineer_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item55
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.0264,14.944766,3782.8247};
+					id=55;
+					side="GUER";
+					vehicle="I_Soldier_exp_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item56
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.9307,14.899652,3782.8242};
+					id=56;
+					side="GUER";
+					vehicle="I_Soldier_repair_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item57
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4225.7837,15.209794,3782.1079};
+					id=57;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item58
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4226.876,15.190248,3782.2251};
+					id=58;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item59
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4228.0273,15.175192,3782.2607};
+					id=59;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item60
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.1084,15.117517,3782.272};
+					id=60;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item61
+		{
+			side="GUER";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4229.9893,15.103656,3782.1777};
+					id=61;
+					side="GUER";
+					vehicle="I_soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="{_x addCuratorEditableObjects [[this]];} forEach allCurators; this setVariable [""ACE_canMoveRallypoint"", true, true];";
+				};
+			};
+		};
+		class Item62
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4238.0732,18.765026,3773.6538};
+					id=62;
+					side="LOGIC";
+					vehicle="ACE_ModuleRallypoint";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item63
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4238.0732,19.239624,3772.2578};
+					class args
+					{
+						items=2;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleRespawn";
+							typeName="SavePreDeathGear";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_ModuleRespawn";
+							typeName="RemoveDeadBodiesDisconnected";
+						};
+					};
+					id=63;
+					side="LOGIC";
+					vehicle="ACE_ModuleRespawn";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item64
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4241.5703,19.221178,3773.9873};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="2";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="level";
+						};
+						class Item1
+						{
+							value="2";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="medicSetting";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="allowLitterCreation";
+						};
+						class Item3
+						{
+							value="600";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="litterCleanUpDelay";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="enableScreams";
+						};
+						class Item5
+						{
+							value="4";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="playerDamageThreshold";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="AIDamageThreshold";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="enableUnconsciousnessAI";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="remoteControlledAI";
+						};
+						class Item9
+						{
+							value="0";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="preventInstaDeath";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="bleedingCoefficient";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="painCoefficient";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ACE_moduleMedicalSettings";
+							typeName="keepLocalSettingsSynced";
+						};
+					};
+					id=64;
+					side="LOGIC";
+					vehicle="ACE_moduleMedicalSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item65
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4241.4316,20.229084,3770.9248};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableFor";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableAdvancedWounds";
+						};
+						class Item2
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="enableVehicleCrashes";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="medicSetting_PAK";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="consumeItem_PAK";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useCondition_PAK";
+						};
+						class Item6
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useLocation_PAK";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="medicSetting_SurgicalKit";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="consumeItem_SurgicalKit";
+						};
+						class Item9
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useLocation_SurgicalKit";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="useCondition_SurgicalKit";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="healHitPointAfterAdvBandage";
+						};
+						class Item12
+						{
+							value="0";
+							parentCls="ACE_moduleAdvancedMedicalSettings";
+							typeName="painIsOnlySuppressed";
+						};
+					};
+					id=65;
+					side="LOGIC";
+					vehicle="ACE_moduleAdvancedMedicalSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item66
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4236.7012,18.0091,3775.4736};
+					id=66;
+					side="LOGIC";
+					vehicle="VirtualCurator_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item67
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4313.7754,28.863617,3790.0464};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="76561197997287214";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=67;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="INF_Rhys";
+				};
+			};
+		};
+		class Item68
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4282.0625,17.415033,3790.7427};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="76561197995337740";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=68;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="INF_Hawkeye";
+				};
+			};
+		};
+		class Item69
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4252.2031,22.388519,3772.2983};
+					class args
+					{
+						items=10;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForSnipers";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForGroupMembers";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulateForEveryone";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="disabledInFullAutoMode";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="ammoTemperatureEnabled";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="barrelLengthInfluenceEnabled";
+						};
+						class Item7
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="bulletTraceEnabled";
+						};
+						class Item8
+						{
+							value="100";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulationInterval";
+						};
+						class Item9
+						{
+							value="3000";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulationRadius";
+						};
+					};
+					id=69;
+					side="LOGIC";
+					vehicle="ace_advanced_ballistics_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item70
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4252.248,24.058062,3767.0977};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_VehicleLock_ModuleSetup";
+							typeName="LockVehicleInventory";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ACE_VehicleLock_ModuleSetup";
+							typeName="VehicleStartingLockState";
+						};
+						class Item2
+						{
+							value="10";
+							parentCls="ACE_VehicleLock_ModuleSetup";
+							typeName="DefaultLockpickStrength";
+						};
+					};
+					id=70;
+					side="LOGIC";
+					vehicle="ACE_VehicleLock_ModuleSetup";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item71
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4256.998,23.918274,3771.9219};
+					class args
+					{
+						items=5;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="zeusAscension";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="zeusBird";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="remoteWind";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="radioOrdnance";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ace_zeus_moduleSettings";
+							typeName="revealMines";
+						};
+					};
+					id=71;
+					side="LOGIC";
+					vehicle="ace_zeus_moduleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item72
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4345.6621,26.288719,3788.4653};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="76561198034419493";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=72;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="INF_Mike64";
+				};
+			};
+		};
+		class Item73
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4258.1875,25.740273,3767.2646};
+					class args
+					{
+						items=1;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleSitting";
+							typeName="enable";
+						};
+					};
+					id=73;
+					side="LOGIC";
+					vehicle="ACE_ModuleSitting";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=21;
+		class Item0
+		{
+			position[]={4226.2759,17.762455,3773.0322};
+			id=74;
+			side="EMPTY";
+			vehicle="Land_Pallet_MilBoxes_F";
+			leader=1;
+			skill=0.60000002;
+			text="B_Ammo";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;{_x addCuratorEditableObjects [[this]];} forEach allCurators;";
+		};
+		class Item1
+		{
+			position[]={4226.2915,17.279549,3774.5835};
+			id=75;
+			side="EMPTY";
+			vehicle="ACE_Rallypoint_West_Base";
+			leader=1;
+			skill=0.60000002;
+			init="this attachTo [B_Ammo,[2,0,3.5]];this addAction[""<t color='#ff9900'>HALO jump</t>"", ""ATM_airdrop\atm_airdrop.sqf""];";
+		};
+		class Item2
+		{
+			position[]={4227.5801,17.308159,3774.5273};
+			id=76;
+			side="EMPTY";
+			vehicle="ACE_Rallypoint_West";
+			leader=1;
+			skill=0.60000002;
+			init="{_x addCuratorEditableObjects [[this]];} forEach allCurators;";
+		};
+		class Item3
+		{
+			position[]={4226.2808,15.827152,3779.77};
+			id=77;
+			side="EMPTY";
+			vehicle="Land_Pallet_MilBoxes_F";
+			leader=1;
+			skill=0.60000002;
+			text="O_Ammo";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;{_x addCuratorEditableObjects [[this]];} forEach allCurators;";
+		};
+		class Item4
+		{
+			position[]={4226.2954,15.419387,3781.3213};
+			id=78;
+			side="EMPTY";
+			vehicle="ACE_Rallypoint_East_Base";
+			leader=1;
+			skill=0.60000002;
+			init="this attachTo [O_Ammo,[2,0,3.5]];this addAction[""<t color='#ff9900'>HALO jump</t>"", ""ATM_airdrop\atm_airdrop.sqf""];";
+		};
+		class Item5
+		{
+			position[]={4227.585,15.446882,3781.2651};
+			id=79;
+			side="EMPTY";
+			vehicle="ACE_Rallypoint_East";
+			leader=1;
+			skill=0.60000002;
+			init="{_x addCuratorEditableObjects [[this]];} forEach allCurators;";
+		};
+		class Item6
+		{
+			position[]={4226.4893,14.201312,3785.5444};
+			id=80;
+			side="EMPTY";
+			vehicle="Land_Pallet_MilBoxes_F";
+			leader=1;
+			skill=0.60000002;
+			text="I_Ammo";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;{_x addCuratorEditableObjects [[this]];} forEach allCurators;";
+		};
+		class Item7
+		{
+			position[]={4226.5049,13.704145,3787.0957};
+			id=81;
+			side="EMPTY";
+			vehicle="ACE_Rallypoint_Independent_Base";
+			leader=1;
+			skill=0.60000002;
+			init="this attachTo [I_Ammo,[2,0,3.5]];this addAction[""<t color='#ff9900'>HALO jump</t>"", ""ATM_airdrop\atm_airdrop.sqf""];";
+		};
+		class Item8
+		{
+			position[]={4227.7939,13.657661,3787.0396};
+			id=82;
+			side="EMPTY";
+			vehicle="ACE_Rallypoint_Independent";
+			leader=1;
+			skill=0.60000002;
+			init="{_x addCuratorEditableObjects [[this]];} forEach allCurators;";
+		};
+		class Item9
+		{
+			position[]={4366.5146,35.876476,3706.4268};
+			id=83;
+			side="EMPTY";
+			vehicle="Land_Pallet_MilBoxes_F";
+			leader=1;
+			skill=0.60000002;
+			text="PurgBox";
+			init="0 = [""AmmoboxInit"",[this,true]] spawn BIS_fnc_arsenal;";
+		};
+		class Item10
+		{
+			position[]={4356.2676,35.255699,3707.9185};
+			id=84;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={4378.1997,36.278233,3707.8232};
+			id=85;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={4367.7896,35.61937,3733.3535};
+			azimut=-89.827591;
+			id=86;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={4366.7686,35.143494,3695.2813};
+			azimut=-89.827591;
+			id=87;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={4356.3257,35.550217,3725.583};
+			id=88;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={4378.2183,35.338055,3724.9463};
+			id=89;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={4370.9126,35.915657,3726.5916};
+			azimut=-0.49388075;
+			id=90;
+			side="EMPTY";
+			vehicle="TargetBootcampHuman_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={4369.1328,35.969433,3726.6113};
+			azimut=-0.49388075;
+			id=91;
+			side="EMPTY";
+			vehicle="TargetBootcampHuman_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={4366.9873,35.971218,3726.5757};
+			azimut=-0.49388075;
+			id=92;
+			side="EMPTY";
+			vehicle="TargetBootcampHuman_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item19
+		{
+			position[]={4365.0684,35.968563,3726.6287};
+			azimut=-0.49388075;
+			id=93;
+			side="EMPTY";
+			vehicle="TargetBootcampHuman_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={4363.2886,35.965061,3726.6479};
+			azimut=-0.49388075;
+			id=94;
+			side="EMPTY";
+			vehicle="TargetBootcampHuman_F";
+			leader=1;
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=4;
+		class Item0
+		{
+			position[]={4228.2139,17.704653,3773.1338};
+			name="respawn_west";
+			text="BLUFOR RESPAWN";
+			type="respawn_unknown";
+			colorName="ColorWEST";
+		};
+		class Item1
+		{
+			position[]={4228.2188,15.818161,3779.8716};
+			name="respawn_east";
+			text="OPFOR RESPAWN";
+			type="respawn_unknown";
+			colorName="ColorEAST";
+		};
+		class Item2
+		{
+			position[]={4228.4268,14.071915,3785.646};
+			name="respawn_guerrila";
+			text="IND RESPAWN";
+			type="respawn_unknown";
+			colorName="ColorGUER";
+		};
+		class Item3
+		{
+			position[]={4366.6196,35.815964,3705.313};
+			name="perg";
+			type="Empty";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"aia_utes_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_utes_config"
+	};
+	randomSeed=1129824;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"aia_utes_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_utes_config"
+	};
+	randomSeed=11783527;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"aia_utes_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_utes_config"
+	};
+	randomSeed=5729751;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};

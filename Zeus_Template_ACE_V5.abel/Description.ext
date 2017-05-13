@@ -1,0 +1,38 @@
+author="INF_Mike64";  					//Author of the mission
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+showGPS=1;
+OnLoadName = "Zeus Mission V5";  			// mission name shown during mission loading.
+OnLoadMission = "Zeus now controls your fate"; //Displays a message while the mission is loading.
+respawn = 3;
+respawnOnStart = -1;//Sets respawn type, 0 or "NONE" - No respawn, 1 or "BIRD" - Respawn as a seagull, 2 or "INSTANT" - Respawn just where you died, 3 or "BASE" - Respawn in base.
+respawnDelay = 15;
+respawnButton = 0; 					//Set respawn delay in seconds.
+RespawnDialog = 0;
+disabledAI = true;
+enableDebugConsole = 1;				//When 1, removes all playable units which do not have a human player. (MP)
+joinUnassigned = 1;
+#include "ATM_airdrop\dialog.hpp"
+
+
+
+class CfgSounds
+{
+   sounds[] = {Vent,Vent2,Para};
+
+	class Vent {name="Vent";sound[]={ATM_airdrop\data\Vent.ogg,db-11,1.0};titles[] = {};};
+	class Vent2 {name="Vent2";sound[]={ATM_airdrop\data\Vent2.ogg,db-11,1.0};titles[] = {};};
+	class Para {name="Para";sound[]={ATM_airdrop\data\parachute.ogg,db-11,1.0};titles[] = {};};
+
+};
+
+class Params
+{
+	class PurgTime
+	{
+		title = "Purgatory Time";
+		texts[] = {"0Min","1Min","2Min","3Min","4Min","5Min","10Min","Forever"};
+		values[] = {0,1,2,3,4,5,10,999};
+		default = 2;
+	};
+};
