@@ -143,6 +143,7 @@ class Mission
 {
 	class Intel
 	{
+		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.30000001;
 		startWind=0.1;
@@ -1035,14 +1036,14 @@ class Mission
 					};
 					id=38;
 					type="B_Soldier_F";
-					atlOffset=0.0080003738;
+					atlOffset=0.0079936981;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=37;
-			atlOffset=0.0080003738;
+			atlOffset=0.0079936981;
 		};
 		class Item33
 		{
@@ -1232,12 +1233,14 @@ class Mission
 					};
 					id=50;
 					type="B_medic_F";
+					atlOffset=-5.7220459e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=49;
+			atlOffset=-5.7220459e-006;
 		};
 		class Item39
 		{
@@ -2207,14 +2210,14 @@ class Mission
 					};
 					id=108;
 					type="I_soldier_F";
-					atlOffset=0.0080003738;
+					atlOffset=0.0080013275;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=107;
-			atlOffset=0.0080003738;
+			atlOffset=0.0080013275;
 		};
 		class Item68
 		{
