@@ -1,0 +1,22 @@
+#include "ATM_airdrop\dialog.hpp"
+respawnOnStart = -1;
+class CfgSounds
+{
+   sounds[] = {Vent,Vent2,Para};
+
+	class Vent {name="Vent";sound[]={ATM_airdrop\data\Vent.ogg,db-11,1.0};titles[] = {};};
+	class Vent2 {name="Vent2";sound[]={ATM_airdrop\data\Vent2.ogg,db-11,1.0};titles[] = {};};
+	class Para {name="Para";sound[]={ATM_airdrop\data\parachute.ogg,db-11,1.0};titles[] = {};};
+
+};
+
+class Params
+{
+	class PurgTime
+	{
+		title = "Purgatory Time";
+		texts[] = {"0Min","1Min","2Min","3Min","4Min","5Min","10Min","Forever"};
+		values[] = {0,1,2,3,4,5,10,999};
+		default = 2;
+	};
+};
