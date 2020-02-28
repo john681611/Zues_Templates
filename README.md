@@ -8,7 +8,7 @@ Comes with:
 * Spectator
 
 ## Building Versions
-1. Make common changes to **`Zeus_Template_ACE_V7.VR`**
+1. Make common changes to **`Zeus_Template_ACE_V7.VR`** (update with version updates)
 1. Run `python3 build.py` (to add maps add file name to list in `build.py`)
 1. For each map:
     1. Make custom changes to starting pos
